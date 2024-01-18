@@ -2,6 +2,10 @@
 # specify graphic directory and logfile. Unused files will be deleted in specified directory.
 # Originally from https://github.com/sbmueller/LaTeXFiguresCleaner
 
+# Known issues - 
+# If there is a file file.pdf which is being used and file_.pdf which is not being used,
+# the script will not delete file_.pdf
+
 import os
 import argparse
 from os.path import join, isdir
